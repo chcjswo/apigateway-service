@@ -12,10 +12,8 @@ import org.springframework.context.annotation.Configuration;
  * @github https://github.com/chcjswo
  * @since 2021-07-13
  **/
-@Configuration
 public class FilterConfig {
 
-	@Bean
 	public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
 		return builder.routes()
 			.route(r -> r.path("/first-service/**")
