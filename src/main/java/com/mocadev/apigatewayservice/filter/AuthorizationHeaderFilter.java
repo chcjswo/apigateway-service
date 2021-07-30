@@ -24,10 +24,14 @@ import reactor.core.publisher.Mono;
  **/
 @Component
 @Slf4j
-@RequiredArgsConstructor
 public class AuthorizationHeaderFilter extends AbstractGatewayFilterFactory<AuthorizationHeaderFilter.Config> {
 
 	private final Environment env;
+
+	public AuthorizationHeaderFilter(Environment env) {
+		super(Config.class);
+		this.env = env;
+	}
 
 	public static class Config {
 
