@@ -8,7 +8,7 @@ class ApigatewayServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
-		System.out.println("test 222 333");
+		System.out.println("test 222 333 444");
 	}
 
 }
